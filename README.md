@@ -15,24 +15,25 @@ This little library give a easy way to write and read multilevel pointers.
    - Solution Properites -> C/C++ -> Additional Include Directories: "$(ProjectDir)include"
 
 
-### Tutorial
+### Usage example
 
 This function must be called at the beginning of the code.
 It find the process handle, process id and the memory address of the module, using the module name and the window name.
-```
+```cpp
 char moduleName[] = "X-Plane.exe";
 char windowName[] = "X-System";
 
 getWindowInfo64(moduleName, windowName);
 ```
-
+<br />
 Create an object and it receive as a parameter an array with the offsets.
 ```cpp
 std::vector<unsigned int> offsets = { 0x02662358, 0x10, 0x10, 0x8, 0x20, 0x18, 0xDC };
 
 Addy64 flaps(offsets);
 ```
-
+\\
+\
 In order to read the value in memory, one of these three functions must be called, each one returns its respective value. You can use them in a loop.
 
 ```cpp
