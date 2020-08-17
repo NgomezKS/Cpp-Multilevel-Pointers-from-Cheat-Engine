@@ -24,7 +24,7 @@ char windowName[] = "X-System";
 
 getWindowInfo64(moduleName, windowName);
 ```
-<pre>
+
 Create an object and it receive as a parameter an array with the offsets.
 ```
 std::vector<unsigned int> offsets = { 0x02662358, 0x10, 0x10, 0x8, 0x20, 0x18, 0xDC };
@@ -32,7 +32,6 @@ std::vector<unsigned int> offsets = { 0x02662358, 0x10, 0x10, 0x8, 0x20, 0x18, 0
 Addy64 flaps(offsets);
 ```
 
-<pre>
 In order to read the value in memory, one of these three functions must be called, each one returns its respective value. You can use them in a loop.
 ```
 double getDouble();
