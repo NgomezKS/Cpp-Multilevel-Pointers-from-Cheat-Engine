@@ -1,10 +1,8 @@
 # Multilevel Pointers from CE to C++
 
-This little library give a easy way to write and read multilevel pointers. 
+This little library give a easy way to write and read multilevel pointers from Cheat Engine. 
 
-## Getting Started
-
-### Project Configuration
+## Project Configuration
 
 1. Solution Plataforms: x64 or x32 (depends if you are using Addy64Lib or Addy32Lib) 
 
@@ -15,7 +13,7 @@ This little library give a easy way to write and read multilevel pointers.
    - Solution Properites -> C/C++ -> Additional Include Directories: "$(ProjectDir)include"
 
 
-### Usage example
+## Usage example
 
 This function must be called at the beginning of the code.
 It find the process handle, process id and the memory address of the module, using the module name and the window name.
