@@ -24,9 +24,12 @@ char windowName[] = "X-System";
 getWindowInfo64(moduleName, windowName);
 ```
 
+
+![ExampleIMG](https://user-images.githubusercontent.com/33960177/90359536-122af780-e051-11ea-9cc3-2a80d0739cd4.jpg)
+This example show how to translate the multilevel pointer in CE to the array.
 Create an object and it receive as a parameter an array with the offsets.
 ```cpp
-std::vector<unsigned int> offsets = { 0x02662358, 0x10, 0x10, 0x8, 0x20, 0x18, 0xDC };
+std::vector<unsigned int> offsets = { 0x02662358, 0x10, 0x10, 0x0, 0x8, 0x20, 0x18, 0xDC };
 
 Addy64 flaps(offsets);
 ```
@@ -51,4 +54,5 @@ void   writeInt(int value);
 // Example
 flaps.writeFloat(2.7f);
 ```
+
 
