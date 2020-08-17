@@ -36,15 +36,23 @@ Addy64 flaps(offsets);
 ```
 ==========================================
 ==========================================
-adasdsadasd
+In order to read the value in memory, one of these three functions must be called, each one returns its respective value.
 ```
-flaps.getDouble();
-flaps.getFloat();
-flaps.getInt();
+double getDouble();
+float  getFloat();
+int    getInt();
 
+// Example
+float a = flaps.getFloat();
+```
+In order to write the value in memory, one of these three functions must be called
+```
+void   writeFloat(float value);
+void   writeDouble(double value);
+void   writeInt(int value);
+
+// Example
 flaps.writeFloat(2.7f);
-flaps.writeDouble(4.5644);
-flaps.writeInt(10);
 ```
 
 ### And coding style tests
