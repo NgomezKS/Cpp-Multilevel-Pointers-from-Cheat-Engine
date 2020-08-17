@@ -1,8 +1,6 @@
-# Cpp-Multilevel-Pointers-from-Cheat-Engine
+# Multilevel Pointers from CE to C++
 
-One Paragraph of project description goes here
-
-This library 
+This little library give a easy way to write and read multilevel pointers. 
 
 ## Getting Started
 
@@ -28,7 +26,7 @@ getWindowInfo64(moduleName, windowName);
 ```
 ==========================================
 ==========================================
-Create an object and receive as a parameter an array with all the offsets.
+Create an object and it receive as a parameter an array with the offsets.
 ```
 std::vector<unsigned int> offsets = { 0x02662358, 0x10, 0x10, 0x8, 0x20, 0x18, 0xDC };
 
@@ -55,14 +53,3 @@ void   writeInt(int value);
 flaps.writeFloat(2.7f);
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
