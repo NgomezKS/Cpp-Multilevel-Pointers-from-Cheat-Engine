@@ -24,15 +24,17 @@ char windowName[] = "X-System";
 
 getWindowInfo64(moduleName, windowName);
 ```
-
+==========================================
+==================================
 Create an object and it receive as a parameter an array with the offsets.
 ```
 std::vector<unsigned int> offsets = { 0x02662358, 0x10, 0x10, 0x8, 0x20, 0x18, 0xDC };
 
 Addy64 flaps(offsets);
 ```
-
-In order to read the value in memory, one of these three functions must be called, each one returns its respective value.
+==========================================
+=================================
+In order to read the value in memory, one of these three functions must be called, each one returns its respective value. You can use them in a loop.
 ```
 double getDouble();
 float  getFloat();
@@ -41,7 +43,7 @@ int    getInt();
 // Example
 float a = flaps.getFloat();
 ```
-In order to write the value in memory, one of these three functions must be called
+In order to write the value in memory, one of these three functions must be called. You can use them in a loop.
 ```
 void   writeFloat(float value);
 void   writeDouble(double value);
