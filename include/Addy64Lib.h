@@ -13,7 +13,7 @@ HWND      hGameWindow;
 
 void GetModuleBaseAddress(TCHAR* lpszModuleName);
 
-void getWindowInfo64(char _windowName[], char _moduleName[]);
+void getWindowInfo64(char _moduleName[], char _windowName[]);
 
 class Addy64
 {
@@ -68,7 +68,7 @@ void GetModuleBaseAddress(TCHAR* lpszModuleName)
 	CloseHandle(hSnapshot);
 }
 
-void getWindowInfo64(char _windowName[], char _moduleName[])
+void getWindowInfo64(char _moduleName[], char _windowName[])
 {
 	GetWindowThreadProcessId(FindWindow(NULL, _windowName), &pID);
 	pHandle = OpenProcess(PROCESS_ALL_ACCESS, FALSE, pID);
