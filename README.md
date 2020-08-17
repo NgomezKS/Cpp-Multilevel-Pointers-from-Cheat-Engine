@@ -10,11 +10,15 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Project Configuration
 
-- Solution Plataforms: x64 or x32 
-- Use Multi-Byte Character Set
+- Solution Plataforms: x64 or x32 (depends if you are using Addy64Lib or Addy32Lib) 
+- Use Multi-Byte Character Set 
+```
    Solution Properites -> Configuration Properites -> Advanced -> Character Set: Use Multi-Byte Character Set
+```
 - Include the folder named 'include' that contains Addy64Lib.h
+```
    Solution Properites -> C/C++ -> Additional Include Directories: "$(ProjectDir)include"
+```
 
 ```
 Give examples
