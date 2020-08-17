@@ -17,29 +17,35 @@ This library
    - Solution Properites -> C/C++ -> Additional Include Directories: "$(ProjectDir)include"
 
 
-### How works
-#### 
+### Tutorial
 This function must be called at the beginning of the code.
 It find the process handle, process id and the memory address of the module, using the module name and the window name.
-
 ```
 char moduleName[] = "X-Plane.exe";
 char windowName[] = "X-System";
 
 getWindowInfo64(moduleName, windowName);
 ```
-
-
-
-And repeat
-
+==========================================
+==========================================
+Create an object and receive as a parameter an array with all the offsets.
 ```
-until finished
+std::vector<unsigned int> offsets = { 0x02662358, 0x10, 0x10, 0x8, 0x20, 0x18, 0xDC };
+
+Addy64 flaps(offsets);
 ```
+==========================================
+==========================================
+adasdsadasd
+```
+flaps.getDouble();
+flaps.getFloat();
+flaps.getInt();
 
-
-End with an example of getting some data out of the system or using it for a little demo
-
+flaps.writeFloat(2.7f);
+flaps.writeDouble(4.5644);
+flaps.writeInt(10);
+```
 
 ### And coding style tests
 
