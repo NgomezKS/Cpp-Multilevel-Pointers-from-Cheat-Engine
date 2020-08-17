@@ -16,6 +16,7 @@ This little library give a easy way to write and read multilevel pointers.
 
 
 ### Tutorial
+
 This function must be called at the beginning of the code.
 It find the process handle, process id and the memory address of the module, using the module name and the window name.
 ```
@@ -26,14 +27,15 @@ getWindowInfo64(moduleName, windowName);
 ```
 
 Create an object and it receive as a parameter an array with the offsets.
-```
+```cpp
 std::vector<unsigned int> offsets = { 0x02662358, 0x10, 0x10, 0x8, 0x20, 0x18, 0xDC };
 
 Addy64 flaps(offsets);
 ```
 
 In order to read the value in memory, one of these three functions must be called, each one returns its respective value. You can use them in a loop.
-```
+
+```cpp
 double getDouble();
 float  getFloat();
 int    getInt();
@@ -41,8 +43,9 @@ int    getInt();
 // Example
 float a = flaps.getFloat();
 ```
+
 In order to write the value in memory, one of these three functions must be called. You can use them in a loop.
-```
+```cpp
 void   writeFloat(float value);
 void   writeDouble(double value);
 void   writeInt(int value);
