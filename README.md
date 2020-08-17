@@ -18,16 +18,17 @@ This library
 
 
 ### How works
-
+#### 
 This function must be called at the beginning of the code.
-It find the process handle, process id and the memory address of the module, using the module name and the window name
+It find the process handle, process id and the memory address of the module, using the module name and the window name.
 
 ```
 char moduleName[] = "X-Plane.exe";
 char windowName[] = "X-System";
 
-void getWindowInfo64(moduleName, windowName);
+getWindowInfo64(moduleName, windowName);
 ```
+
 
 
 And repeat
