@@ -19,13 +19,16 @@ This library
 
 ### How works
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+This function must be called at the beginning of the code.
+It find the process handle, process id and the memory address of the module, using the module name and the window name
 
 ```
-Give the example
+char moduleName[] = "X-Plane.exe";
+char windowName[] = "X-System";
+
+void getWindowInfo64(moduleName, windowName);
 ```
+
 
 And repeat
 
@@ -33,11 +36,6 @@ And repeat
 until finished
 ```
 
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
 
 End with an example of getting some data out of the system or using it for a little demo
 
