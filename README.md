@@ -16,7 +16,7 @@ These instructions will get you a copy of the project up and running on your loc
    - Solution Properites -> Configuration Properites -> Advanced -> Character Set: Use Multi-Byte Character Set
 
 3. Include the folder named 'include' that contains Addy64Lib.h and Addy32Lib.h
-   -Solution Properites -> C/C++ -> Additional Include Directories: "$(ProjectDir)include"
+   - Solution Properites -> C/C++ -> Additional Include Directories: "$(ProjectDir)include"
 
 
 ### Installing
