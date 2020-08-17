@@ -19,8 +19,8 @@ int main()
 	float newValue = 1.0f;
 
 	// Offsets array
-	std::vector<unsigned int> offsets = { 0x02662358, 0x10, 0x10, 0x8, 0x20, 0x18, 0xDC };
-
+	std::vector<unsigned int> offsets = { 0x02662358, 0x10, 0x10, 0x0, 0x8, 0x20, 0x18, 0xDC };
+	
 	// Gets the process handle and the base address
 	getWindowInfo64(moduleName, windowName);
 
