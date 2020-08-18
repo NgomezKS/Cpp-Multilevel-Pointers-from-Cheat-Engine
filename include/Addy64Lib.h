@@ -8,7 +8,6 @@
 #include <TlHelp32.h>
 #include <tchar.h>
 
-
 namespace varAddy64 {
 	DWORD_PTR baseAddress{ 0 };
 	HANDLE    pHandle{ 0 };
