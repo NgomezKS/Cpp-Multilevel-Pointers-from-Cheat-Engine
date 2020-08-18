@@ -1,5 +1,5 @@
 ﻿  Main.cpp
-C:\Users\ngomez\source\repos\Cpp-Multilevel-Pointers-from-Cheat-Engine\example\ExampleAddy64\ExampleAddy64\include\Addy64Lib.h(35,1): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\ngomez\source\repos\Cpp-Multilevel-Pointers-from-Cheat-Engine\example\ExampleAddy64\ExampleAddy64\include\Addy64Lib.h(88,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\ngomez\source\repos\Cpp-Multilevel-Pointers-from-Cheat-Engine\example\ExampleAddy64\ExampleAddy64\include\Addy64Lib.h(97): warning C4715: 'Addy64::getAddress': not all control paths return a value
+C:\Users\ngomez\source\repos\Cpp-Multilevel-Pointers-from-Cheat-Engine\example\ExampleAddy64\ExampleAddy64\include\Addy64Lib.h(37,1): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\ngomez\source\repos\Cpp-Multilevel-Pointers-from-Cheat-Engine\example\ExampleAddy64\ExampleAddy64\include\Addy64Lib.h(91,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ngomez\source\repos\Cpp-Multilevel-Pointers-from-Cheat-Engine\example\ExampleAddy64\ExampleAddy64\include\Addy64Lib.h(103): warning C4715: 'Addy64::getAddress': not all control paths return a value
   ExampleAddy64.vcxproj -> C:\Users\ngomez\source\repos\Cpp-Multilevel-Pointers-from-Cheat-Engine\example\ExampleAddy64\x64\Debug\ExampleAddy64.exe
