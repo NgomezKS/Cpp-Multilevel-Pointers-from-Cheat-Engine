@@ -9,10 +9,10 @@
 #include <tchar.h>
 
 namespace varAddy64 {
-	DWORD_PTR baseAddress{ 0 };
-	HANDLE    pHandle{ 0 };
-	DWORD     pID{ 0 };
-	HWND      hGameWindow{ 0 };
+	DWORD_PTR  baseAddress{ 0 };
+	HANDLE     pHandle{ 0 };
+	DWORD      pID{ 0 };
+	HWND       hGameWindow{ 0 };
 	DWORD_PTR  address{ 0 };
 }
 
