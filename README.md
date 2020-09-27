@@ -1,4 +1,4 @@
-# Multilevel Pointers from CE to C++
+# Multilevel Pointers Cheat Engine to C++
 
 This little library give a easy way to write and read multilevel pointers from Cheat Engine. 
 
